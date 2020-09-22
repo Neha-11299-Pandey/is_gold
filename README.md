@@ -1,5 +1,8 @@
 # is_gold
 When Amount field on Opportunity  is greater than $20k, mark is_gold to TRUE.
+
+
+
 trigger UpdateAccountField on Opportunity (after insert,after update) {
     List<Account> lstAccounts = new  List<Account>();
     Set<Id> setAccountIds = new Set<Id>();
